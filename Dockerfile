@@ -26,7 +26,7 @@ RUN bash msf.sh
 RUN rm master.zip
 RUN rm -r Stockfish-master
 RUN bash sf.sh
-RUN wget --no-check-certificate "https://github.com/ianfab/Fairy-Stockfish/releases/download/fairy_sf_14_0_1_xq/fairy-stockfish-largeboard_x86-64-modern" -O fsf
+RUN wget --no-check-certificate "https://abrok.eu/stockfish/builds/ba06c480a752458a8159db0c9110bd3b7e34145a/linux64avx2/stockfish_23042209_x64_avx2.zip" -O fsf
 
 COPY requirements.txt .
 RUN python3 -m pip install --no-cache-dir -r requirements.txt
